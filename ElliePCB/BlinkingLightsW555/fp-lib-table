@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name GTB)(type KiCad)(uri /Users/bsatrom/Development/ContextualElectronics/GTB.pretty)(options "")(descr ""))
+  (lib (name BarrelJack)(type KiCad)(uri "$(KIPRJMOD)/BarrelJack.pretty")(options "")(descr ""))
+)

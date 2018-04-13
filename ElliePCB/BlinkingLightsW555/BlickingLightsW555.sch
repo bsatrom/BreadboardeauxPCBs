@@ -1,0 +1,237 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:SparkFun_SchematicComponents
+LIBS:BlickingLightsW555-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L NA555 U1
+U 1 1 5AADC81F
+P 5200 4000
+F 0 "U1" H 4800 4350 50  0000 L CNN
+F 1 "NA555" H 5300 4350 50  0000 L CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_Socket_LongPads" H 5200 4000 50  0001 C CNN
+F 3 "" H 5200 4000 50  0001 C CNN
+	1    5200 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5AADC84F
+P 4600 4950
+F 0 "R1" V 4680 4950 50  0000 C CNN
+F 1 "1K" V 4600 4950 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" V 4530 4950 50  0001 C CNN
+F 3 "" H 4600 4950 50  0001 C CNN
+	1    4600 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 5AADC8D6
+P 5300 4950
+F 0 "R2" V 5380 4950 50  0000 C CNN
+F 1 "1K" V 5300 4950 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" V 5230 4950 50  0001 C CNN
+F 3 "" H 5300 4950 50  0001 C CNN
+	1    5300 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L CP1 C1
+U 1 1 5AADC93C
+P 5900 4950
+F 0 "C1" H 5925 5050 50  0000 L CNN
+F 1 "470UF" H 5925 4850 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D14.0mm_P5.00mm" H 5900 4950 50  0001 C CNN
+F 3 "" H 5900 4950 50  0001 C CNN
+	1    5900 4950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R3
+U 1 1 5AADC9CC
+P 6100 3650
+F 0 "R3" V 6180 3650 50  0000 C CNN
+F 1 "470" V 6100 3650 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" V 6030 3650 50  0001 C CNN
+F 3 "" H 6100 3650 50  0001 C CNN
+	1    6100 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 5AADCA3D
+P 6100 3900
+F 0 "R4" V 6180 3900 50  0000 C CNN
+F 1 "470" V 6100 3900 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" V 6030 3900 50  0001 C CNN
+F 3 "" H 6100 3900 50  0001 C CNN
+	1    6100 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D1
+U 1 1 5AADCA68
+P 7000 3250
+F 0 "D1" H 7000 3350 50  0000 C CNN
+F 1 "LED" H 7000 3150 50  0000 C CNN
+F 2 "LEDs:LED-10MM" H 7000 3250 50  0001 C CNN
+F 3 "" H 7000 3250 50  0001 C CNN
+	1    7000 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D2
+U 1 1 5AADCAFA
+P 7000 4300
+F 0 "D2" H 7000 4400 50  0000 C CNN
+F 1 "LED" H 7000 4200 50  0000 C CNN
+F 2 "LEDs:LED-10MM" H 7000 4300 50  0001 C CNN
+F 3 "" H 7000 4300 50  0001 C CNN
+	1    7000 4300
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 4700 4000
+Wire Wire Line
+	7000 2900 7000 3100
+Wire Wire Line
+	7000 3400 7000 3650
+Wire Wire Line
+	7000 3650 6250 3650
+Wire Wire Line
+	5950 3650 5800 3650
+Wire Wire Line
+	5800 3650 5800 3900
+Wire Wire Line
+	5800 3800 5700 3800
+Wire Wire Line
+	5800 3900 5950 3900
+Connection ~ 5800 3800
+Wire Wire Line
+	6250 3900 7000 3900
+Wire Wire Line
+	7000 3900 7000 4150
+Wire Wire Line
+	7000 4450 7000 4600
+Wire Wire Line
+	5200 4600 5200 4400
+Connection ~ 7000 4600
+Connection ~ 5200 4600
+Wire Wire Line
+	7700 4600 5200 4600
+Wire Wire Line
+	5200 2900 5200 3600
+Connection ~ 7000 2900
+Wire Wire Line
+	4200 2900 4200 4950
+Wire Wire Line
+	4200 4950 4450 4950
+Connection ~ 5200 2900
+Wire Wire Line
+	4750 4950 5150 4950
+Wire Wire Line
+	5150 4950 5150 4700
+Wire Wire Line
+	5150 4700 5800 4700
+Wire Wire Line
+	5800 4700 5800 4000
+Wire Wire Line
+	5800 4000 5700 4000
+Wire Wire Line
+	5450 4950 5750 4950
+Wire Wire Line
+	5550 4950 5550 5200
+Wire Wire Line
+	5550 5200 4000 5200
+Wire Wire Line
+	4000 5200 4000 3800
+Wire Wire Line
+	4000 3800 4700 3800
+Connection ~ 5550 4950
+Wire Wire Line
+	6050 4950 6050 4600
+Connection ~ 6050 4600
+Wire Wire Line
+	5700 4200 5700 4950
+Connection ~ 5700 4950
+Wire Wire Line
+	4700 4200 4550 4200
+Wire Wire Line
+	4550 4200 4550 3600
+Wire Wire Line
+	4550 3600 5200 3600
+Wire Wire Line
+	7700 3800 7700 4850
+$Comp
+L GND #PWR01
+U 1 1 5AB400BD
+P 7700 4850
+F 0 "#PWR01" H 7700 4600 50  0001 C CNN
+F 1 "GND" H 7700 4700 50  0000 C CNN
+F 2 "" H 7700 4850 50  0001 C CNN
+F 3 "" H 7700 4850 50  0001 C CNN
+	1    7700 4850
+	1    0    0    -1  
+$EndComp
+Connection ~ 7700 4600
+Text Label 7700 2900 0    60   ~ 0
+VDD'
+$Comp
+L Barrel_Jack J1
+U 1 1 5AD1099E
+P 7400 3700
+F 0 "J1" H 7400 3910 50  0000 C CNN
+F 1 "Barrel_Jack" H 7400 3525 50  0000 C CNN
+F 2 "BarrelJack:CUI-PJ-102A_dc-barrel-jack-3-pad" H 7450 3660 50  0001 C CNN
+F 3 "" H 7450 3660 50  0001 C CNN
+	1    7400 3700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7700 3700
+Wire Wire Line
+	4200 2900 7700 2900
+Wire Wire Line
+	7700 2900 7700 3600
+NoConn ~ 5950 4300
+$EndSCHEMATC
